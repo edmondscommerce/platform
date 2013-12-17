@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": ">=5.4.4",
-        "symfony/symfony": "v2.3.6",
+        "symfony/symfony": "2.4.x-dev",
         "doctrine/orm": ">=2.2.3,<2.4-dev",
         "doctrine/doctrine-bundle": "1.2.*",
         "doctrine/data-fixtures": "@dev",
@@ -18,7 +18,7 @@
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
-        "jms/job-queue-bundle": "dev-master",
+        "jms/job-queue-bundle": "0.1.*@dev",
         "jms/serializer": "0.14.*@dev",
         "jms/serializer-bundle": "0.13.*@dev",
         "kriswallsmith/assetic": "1.1.*@dev",
