@@ -1,17 +1,30 @@
 {
-    "name": "oro/platform",
-    "description": "Business Application Platform (BAP)",
-    "homepage": "https://github.com/orocrm/platform.git",
-    "license": "MIT",
+	"name": "oro/platform",
+	"description": "Business Application Platform (BAP)",
+	"homepage": "https://github.com/orocrm/platform.git",
+	"license": "MIT",
+    "authors": [
+        {
+            "name": "Oro, Inc",
+            "homepage": "http://www.orocrm.com"
+        }
+    ],
     "require": {
-        "php": ">=5.4.4",
-        "symfony/symfony": "2.4.x-dev",
-        "doctrine/orm": ">=2.2.3,<2.4-dev",
-        "doctrine/doctrine-bundle": "1.2.*",
-        "doctrine/data-fixtures": "@dev",
-        "doctrine/doctrine-fixtures-bundle": "@dev",
-        "twig/extensions": "1.0.*@dev",
-        "symfony/assetic-bundle": "2.3.*@dev",
+		"php": ">=5.4.4",
+        "ext-intl": "*",
+        "ext-mbstring": "*",
+        "ext-gd": "*",
+        "ext-xml": "*",
+        "ext-mysql": "*",
+        "lib-ICU": ">=4.4",
+        "symfony/symfony": "v2.4.x-dev",
+        "doctrine/orm": "2.4.*@dev",
+        "doctrine/doctrine-bundle": "1.2.x-dev",
+        "doctrine/data-fixtures": "1.0.0",
+        "doctrine/doctrine-fixtures-bundle": "2.2.0",
+        "twig/extensions": "1.0.1",
+        "symfony/assetic-bundle": "2.3.0",
+        "symfony/icu": "1.2.x-dev",
         "symfony/swiftmailer-bundle": "2.3.*",
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "2.3.*",
@@ -45,11 +58,13 @@
         "jdare/clank-bundle": "dev-master",
         "lexik/maintenance-bundle": "dev-master",
         "sylius/flow-bundle": "dev-master"
-    },
-    "minimum-stability": "dev",
-    "autoload": {
-        "psr-0": {
-              "Oro\\Bundle": "src/"
-        }
-    }
+	},
+	"minimum-stability": "dev",
+	"autoload": 
+	{
+		"psr-0": 
+		{
+			"Oro\\Bundle": "src/"
+		}
+	}
 }
